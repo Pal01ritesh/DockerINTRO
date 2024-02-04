@@ -1,0 +1,33 @@
+Docker is a container platform that allows you to build, test and deploy applications quickly. A developer defines all the applications and it’s dependencies in a Dockerfile which is then used to build Docker images that defines a Docker container. Doing this ensures that your application will run in any environment.
+
+
+
+some commands of docker in general
+
+docker ps -a  -> lists all the containers running in the docker
+docker container prune -f  -> deletes all the stopped containers in the docker environment.
+docker run hello-world   ->   first searches locally then if not found download and installs the image.
+
+docker run -it ubuntu     ->      runs the ubuntu in interactive environment
+docker ps    ->       gives the list of all the container that are currently running
+docker images  -> gives the list of all the images installed in the docker.
+
+
+if you want to add a bash shell to a container then copy the container id and run the command
+
+command    ->     docker container exec it containerid bash
+
+
+
+
+to run a container in background we have to use the detached mode
+
+command   ->     docker run -d ubuntu
+
+
+
+Remove an image
+
+command   ->     docker rmi ubuntu -f
+
+
