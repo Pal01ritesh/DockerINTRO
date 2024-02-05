@@ -31,3 +31,22 @@ Remove an image
 command   ->     docker rmi ubuntu -f
 
 
+
+#remove all the images of the docker at once
+
+
+
+docker rmi $(docker images -q) -f
+
+
+# to list all the images in the docker with their image id only
+
+docker images -q
+
+
+
+
+
+
+
+
