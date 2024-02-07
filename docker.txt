@@ -44,7 +44,18 @@ docker rmi $(docker images -q) -f
 docker images -q
 
 
+#bulding your own image
 
+
+ f docker build -t myimage .
+
+
+
+# write this code in docker file
+
+
+FROM ubuntu
+CMD ["echo" , "hello there "]
 
 
 
